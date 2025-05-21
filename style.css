@@ -196,7 +196,7 @@ header ul a {
 /* Seletor para o botão dentro de hero-inf */
 .hero-inf button {
     color: white; /* 'color' define a cor do texto do botão como branca */
-    padding: 15px 35px; /* 'padding' adiciona um espaço interno ao botão. O 
+    padding: 15px 25px; /* 'padding' adiciona um espaço interno ao botão. O 
     primeiro valor (15px) é para o topo e o fundo, o segundo (35px) é para as laterais */
     border-radius: 10px; /* 'border-radius' arredonda as bordas do botão */
     border: 1px solid #727fdea8; /* 'border' define uma borda ao redor do botão com 
@@ -205,6 +205,16 @@ header ul a {
     box-shadow: 0 0 5px #727fde86; /* 'box-shadow' aplica uma sombra ao redor do botão */
     cursor: pointer; /* 'cursor' muda o estilo do cursor para indicar que o botão é clicável */
     transition: 0.3s; /* 'transition' cria uma animação suave ao passar o mouse sobre o botão, levando 0.3 segundos */
+}
+
+
+.hero-inf button a{
+    color: white; /* 'color' define a cor do texto do botão como branca */
+    padding: 0px 5px; /* 'padding' adiciona um espaço interno ao botão. O 
+    primeiro valor (15px) é para o topo e o fundo, o segundo (35px) é para as laterais */
+    text-decoration: none;
+    font-size: 16px;
+    
 }
 
 /* Efeito de hover para o botão (quando o usuário passa o mouse sobre ele) */
@@ -493,6 +503,7 @@ header ul a {
 */
 .card:nth-child(4) {
     grid-column: span 2; /* Este card ocupa 2 colunas */
+    
 }
 
 /* Parágrafo dentro do 4º card */
@@ -523,6 +534,10 @@ header ul a {
     height: 100vh; /* Altura igual à altura total da tela */
     margin-top: 200px; /* Espaço acima da seção */
     margin-bottom: 700px; /* Espaço abaixo da seção */
+    padding-top: 150px;  /* Espaço interno no topo pra afastar a secão */
+}
+.section-title{
+    margin-bottom: 210px;
 }
 
 /* Cada card de projeto (um vídeo + descrição) */
@@ -533,6 +548,12 @@ header ul a {
     align-items: center; /* Alinha verticalmente o vídeo e a descrição */
     gap: 10%; /* Espaço entre o vídeo e a descrição */
     justify-content: center; /* Centraliza tudo horizontalmente */
+    margin-bottom: 100px;
+    /* 
+  Adiciona espaçamento vertical entre os cards de projeto.
+  Isso evita que o botão do projeto atual fique colado no vídeo do próximo.
+  Ideal usar em telas menores ou layouts com coluna única.
+*/
 }
 
 /* Caixa que contém o vídeo */
@@ -585,7 +606,7 @@ header ul a {
 /* Parágrafo de descrição do projeto */
 .projeto-inf p {
     width: 90%; /* Largura padrão */
-    max-width: 400px; /* Largura máxima */
+    width: 400px; /* Largura máxima */
     min-width: 300px; /* Largura mínima */
     margin-top: 0; /* Remove espaço acima */
     margin-bottom: 50px; /* Espaço abaixo do texto */
@@ -653,12 +674,21 @@ header ul a {
     display: none; /* Oculta completamente o .hover-sign quando está ativo */
 }
 
+
+
+
+
+
+
+
+
+
+
 /* Minhas Skills */
-
-
 
 /* Seção principal que organiza o bloco de skills */
 .skills-section {
+    padding-top: 140px;  /* espaçamento interno no topo pra afastar as seçoes */
     display: flex; /* Deixa o conteúdo em linha por padrão */
     flex-direction: column; /* Mas aqui vira coluna */
     align-items: center; /* Centraliza os itens no eixo cruzado (horizontal nesse caso) */
@@ -839,6 +869,7 @@ header ul a {
 ============================ */
 
 .contact-section {
+    padding-top: 140px;  /* espaçamento interno no topo pra do h1 */
     width: 80%; /* Ocupa 80% da largura da página */
     height: 100vh; /* Altura total da tela (viewport height) */
     display: flex; /* Usando flexbox para organizar os dois blocos lado a lado */
@@ -849,6 +880,7 @@ header ul a {
 }
 
 .contact-section h1 {
+    padding-top: 140px;  /* espaçamento interno no topo pra afastar as seçoes */
     position: absolute; /* Remove o título do fluxo normal e permite posicionar livremente */
     top: 0%; /* Posicionado no topo da seção */
     left: 40%; /* Empurra o título 40% da esquerda — fica mais ou menos centralizado */
@@ -902,6 +934,10 @@ header ul a {
     outline: none; /* Remove o contorno ao focar */
     border-top-right-radius: 10px; /* Arredondamento no canto superior direito */
     border-bottom-right-radius: 10px; /* Arredondamento no canto inferior direito */
+} 
+.contact-box input .input-message{
+    height: 250px; /* Altura fixa */
+    
 }
 
 /* Botão de envio */
@@ -1340,8 +1376,9 @@ footer h1 {
     }
     
 
-    .section-title{
+    .contact-section .section-title{
         padding-top: 80px;
+        left: 35%;
     }
 
   
@@ -1400,108 +1437,132 @@ footer h1 {
 /* Mobile */ 
 
 @media screen and (max-width: 700px) {
-    header{
-        position: fixed;
-        height: 50px;
-    }
-    header ul{
-        display: none;
-    }
-    header .box-icons{
-        display: none;
-    }
-   .blackhoole-box video{
-    margin-top: -18%;
-   }
-   .hero{
-    flex-direction: column;
-   }
-   .autoBlur{
-    animation: none;
-   }
+     
 
-   .hero-inf{
-      bottom: -10%;
-      padding-bottom: 0;
-   }
-   
-   .scroll--down{
+    header {
+    position: fixed;
+    height: 50px;
+  }
+
+  header ul,
+  header .box-icons {
+    display: none;
+  }
+
+  .blackhoole-box video {
+    margin-top: -18%;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .autoBlur {
+    animation: none;
+  }
+
+  .hero-inf {
+    bottom: -10%;
+    padding-bottom: 0;
+  }
+
+  .scroll--down {
     bottom: -10%;
     margin-left: 20px;
-     padding-bottom: 0;
-   }
+    padding-bottom: 0;
+  }
 
-   .hero-inf h1{
+  .hero-inf h1 {
     line-height: 50px;
-   }
-   .card p{
-     font-size: 13px;
-     max-width: 90%;
-     font-weight: bold;
+  }
 
-   }
+  .card p {
+    font-size: 13px;
+    max-width: 90%;
+    font-weight: bold;
+  }
+
   .card:nth-child(2) p {
-    bottom: 0%; /* fixa o paragravo no ponto 0 de baixo da caixa */
-}
- .card-vid video{
-    height: 80%;
- }
- .card-vid h1{
-    margin-bottom: 20px;
- }
+    bottom: 0%;
+  }
 
-   .hero-vid-box{
+  /* Aumenta o tamanho dos vídeos */
+  .card-vid video {
+    width: 100%; /* faz o vídeo ocupar toda a largura do container */
+    height: auto; /* mantém proporção */
+  }
+
+  .card-vid h1 {
+    margin-bottom: 20px;
+  }
+
+  .hero-vid-box {
     height: 250px;
     top: 5%;
     right: 5%;
-   }
+  }
 
-   .inf-section{
+  .inf-section {
     padding-top: 300px;
-   }
+  }
 
-
-   
-
-   .card video{
+  .card video {
     width: 100%;
-   }
+  }
 
-   .meus-projetos{
+  .meus-projetos {
     margin-bottom: 600px;
-   }
+  }
 
-   .projeto-card{
+
+
+    .projeto-card {
     flex-direction: column;
-    margin-left: 25%;
-    gap: 30px;
-   }
-   .projeto-inf{
-    width: 85%;
-   
-   }
-    .projeto-inf h1{
-        text-wrap: nowrap;
-        text-align: center;
-         margin-left: 10%;
-    }
-    .projeto-inf p{
-        max-width: 300px;
-        line-height: 16px;
-        font-weight: bold;
-        font-size: 13px;
-        margin-left: 10%;
-    }
-      .projeto-inf button {
-        margin-left: 11%;
-        margin-top: -20px;
-      }
+    align-items: center; /* Centraliza o bloco inteiro do projeto */
+    gap: 40px; /* Espaço entre os cards de projetos */
+    margin-bottom: 160px;
+  }
 
+  .projeto-card video {
+    width: 100%; /* Deixa o vídeo maior */
+    max-width: 500px; /* Evita que fique gigante em telas maiores */
+      margin: 0 auto; /* Centraliza o bloco texto em relação ao vídeo */
+  }
 
+  .projeto-inf {
+    width: 90%; /* Mesmo tamanho do vídeo para alinhar */
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza o bloco texto em relação ao vídeo */
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start; /* Garante alinhamento igual aos textos */
+    gap: 10px; /* Espaço entre título, parágrafo e botão */
+  }
 
+  .projeto-inf h1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left; /* Alinha texto à esquerda */
+    white-space: nowrap; /* Evita quebra do título */
+    align-self: flex-start; /* Garante alinhamento igual aos textos */
+    margin-left: 6px;
+    
+  }
 
+  .projeto-inf p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    max-width: 100%; /* Garante que fique dentro do bloco */
+    word-break: break-word; /* Quebra a palavra quando necessário */
+    margin-left: 6px;
+  }
 
-
+  .projeto-inf button {
+    margin-top: -35px;
+    align-self: flex-start; /* Garante alinhamento igual aos textos */
+    margin-left: 6px;
+  }
 
 
 
@@ -1513,6 +1574,7 @@ footer h1 {
 .skills-section {
   padding: 100px 20px;
   position: relative;
+  padding-top: 450px;  /* espaçamento interno no topo pra afastar as seçoes */
 }
 
 /* Título da seção "Minhas Skills" */
@@ -1520,6 +1582,7 @@ footer h1 {
   position: absolute;
   top: 20px;
   left: 50%;
+  padding-top: 450px;  /* mesmo espaçamento interno da seçao principal fazendo com que volte pra posição original */
   transform: translateX(-50%);
   z-index: 2;
   text-align: center;
@@ -1624,6 +1687,7 @@ footer h1 {
     font-size: 22px; /* reduz o tamanho da fonte do título */
     margin-bottom: 30px; /* espaço abaixo do título */
     text-align: center;
+    left: 35%;
   }
 
   /* Links sociais (LinkedIn, GitHub, Telefone) */
