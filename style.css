@@ -83,6 +83,14 @@ header ul {
 header ul li{
     list-style: none;
 }
+
+header ul li a:hover{
+    
+    color: black; /* Muda a cor do ícone para preto no hover */
+    padding-top: -20px;
+    box-shadow: 0 0 20px #727fde65; /* Sombra azul clara ao redor com 10px de desfoque */
+    mix-blend-mode: difference; /* Clareia o ícone com base na cor de fundo, dando destaque no hover */
+}
 header ul a {
     text-decoration: none; /* Remove o sublinhado dos links */
     color: white; /* Cor branca para o texto dos links */
