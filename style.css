@@ -1331,6 +1331,108 @@ footer h1 {
 
 
 
+  
+
+
+.inf-section{
+     margin-top: -100px;
+     margin-bottom: -100px;
+}
+
+
+.inf-section .section-title{
+    margin-bottom: 5px;
+}
+
+  
+.inf-cards{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+.card{
+    padding-bottom: 90px;
+}
+
+
+.inf-cards .card p{
+    width: 90%;
+    max-width: 90%;
+    bottom: 0%;
+    font-size: 12px;
+}
+
+
+.card:nth-child(1) img {
+   position: absolute;
+   top: 3%;
+   width: 100%;
+   max-width: 300px;
+
+   
+  }
+  .card:nth-child(2) img {
+   position: absolute;
+   top: 3%;
+   width: 200px;
+   max-width: 100%;
+   
+  }
+
+  .card:nth-child(3) h1 {
+    top: 35%;
+    width: 100%;
+    max-width: 100%;
+    font-weight: 700
+    ;
+   
+    
+  }
+
+  .card:nth-child(3) p {
+    bottom: 15%;
+  }
+
+  /* Aumenta o tamanho dos vídeos */
+  .card-vid video {
+    width: 100%; /* faz o vídeo ocupar toda a largura do container */
+   
+    height: auto; /* mantém proporção */
+  }
+
+  
+  
+  .card:nth-child(4) h1 {
+    top: 47%;
+  }
+  .card:nth-child(4) p {
+    bottom: 0;
+    font-size: 11px !important;
+  }
+   
+
+
+
+
+
+
+  .card-vid h1 {
+    margin-bottom: 20px;
+  }
+
+  .hero-vid-box {
+    height: 250px;
+    top: 5%;
+    right: 5%;
+  }
+
+  .inf-section {
+    padding-top: 300px;
+  }
+
+  .card video {
+    width: 100%;
+  }
 
 
   
@@ -1442,43 +1544,6 @@ footer h1 {
   
 
    
-/* Slider que passa as imagens abaixo do bloco de skills */
-.slider {
-  position: absolute;
-  top: calc(100% + 130px); /* posiciona logo abaixo das skills */
-  left: 0;
-  width: 100%;
-  padding: 20px 0;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-}
-
-/* Lista interna do slider */
-.slider .list {
-  display: flex;
-  gap: 20px;
-  animation: scrollSlider 15s linear infinite; /* animação de rolagem infinita */
-}
-
-/* Cada item (imagem) dentro do slider */
-.slider .item img {
-  width: 70px;
-  height: auto;
-  object-fit: contain;
-}
-
-/* Animação do slider */
-@keyframes scrollSlider {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-  
 
 
 
@@ -1745,6 +1810,12 @@ footer h1 {
     padding-bottom: 0;
   }
 
+
+
+
+
+
+
   .hero-inf h1 {
     line-height: 50px;
   }
@@ -1783,16 +1854,20 @@ footer h1 {
     width: 100%;
   }
 
+
+
+
+
+
+
+
+
+
+
+
   .meus-projetos {
     margin-bottom: 600px;
   }
-
-
-
-
-
-
-
 
 
     .projeto-card {
