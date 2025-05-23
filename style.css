@@ -1262,6 +1262,7 @@ footer h1 {
     flex-direction: column; /* empilha os elementos em coluna */
     gap: 1.5rem; /* espaçamento entre o vídeo e o conteúdo */
     padding: 11rem 0rem; /* espaçamento interno (topo/baixo 2rem, laterais 1rem) */
+    margin-top: -110px;
     
     
   }
@@ -1270,22 +1271,26 @@ footer h1 {
   .hero-vid-box {
   
     width: 100%; /* garante que o vídeo ocupe toda a largura disponível */
-    margin-bottom: 1rem; /* adiciona um pequeno espaço abaixo do vídeo */
+    margin-bottom: 0; /* adiciona um pequeno espaço abaixo do vídeo */
+   
   }
 
   /* Estiliza o vídeo para preencher corretamente sem distorcer */
   .hero-vid-box video {
     width: 80%; /* faz o vídeo se ajustar à largura do container */
-    
+    margin-bottom: 0;
     position: absolute;
     right: 0%;
+    top: 59%;
     z-index: 999;
+    margin-top: -60px;
    
   }
 
   /* Caixa com o conteúdo textual da hero */
   .hero-inf {
     align-items: center;
+    margin-top: 7000px;
   
   }
 
@@ -1848,9 +1853,7 @@ footer h1 {
     right: 5%;
   }
 
-  .inf-section {
-    padding-top: 300px;
-  }
+  
 
   .card video {
     width: 100%;
