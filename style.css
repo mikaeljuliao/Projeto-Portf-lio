@@ -1254,7 +1254,7 @@ footer h1 {
   /* Define o container principal da seção Hero em coluna */
 
   html, body{
-   
+      overflow-x: hidden !important;
      outline: 1px solid red;
   }
   .hero {
@@ -1348,13 +1348,20 @@ footer h1 {
     .projeto-card {
     flex-direction: column;
     align-items: center; /* Centraliza o bloco inteiro do projeto */
+    width: 100%;
+    max-width: 100%;
+  
+    box-sizing: border-box;
     gap: 40px; /* Espaço entre os cards de projetos */
     margin-bottom: 160px;
+    padding-bottom: 350px;
   }
+
 
   .projeto-card video {
     width: 100%; /* Deixa o vídeo maior */
     max-width: 200px; /* Evita que fique gigante em telas maiores */
+    height: auto;
     margin: 0 auto; /* Centraliza o bloco texto em relação ao vídeo */
   }
   .projeto-vidbox video{
@@ -1401,8 +1408,6 @@ footer h1 {
     align-self: flex-start; /* Garante alinhamento igual aos textos */
     margin-left: 6px;
   }
-
-
 
 }
 
