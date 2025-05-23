@@ -1411,8 +1411,97 @@ footer h1 {
   }
 
 
+
+
+
+  
+   
+   
+     
+
+    .skills-section .section-title{
+        margin-top: 160px;
+    }
+    
+    .skills-box .skills-image{
+        padding-top: 450px;
+        
+     }
+
+
+    .skills-box .designer{
+        padding-top: 210px;
+    }
+    .skills-box .coder{
+        padding-top: 210px;
+    }
+
+    .skills-box .slider{
+        padding-top: 250px;
+    }
   
 
+   
+/* Slider que passa as imagens abaixo do bloco de skills */
+.slider {
+  position: absolute;
+  top: calc(100% + 130px); /* posiciona logo abaixo das skills */
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Lista interna do slider */
+.slider .list {
+  display: flex;
+  gap: 20px;
+  animation: scrollSlider 15s linear infinite; /* animação de rolagem infinita */
+}
+
+/* Cada item (imagem) dentro do slider */
+.slider .item img {
+  width: 70px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Animação do slider */
+@keyframes scrollSlider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+  
+
+
+
+   
+
+ /* Container da seção de contato */
+  .contact-section {
+    padding-top: 300px !important;
+   
+  }
+
+  /* Título da seção */
+  .contact-section .section-title {
+    font-size: 22px; /* reduz o tamanho da fonte do título */
+    margin-top: 140px; /* espaço abaixo do título */
+    text-align: center;
+    left: 35%;
+  }
+
+
+
+
+    
 }
 
 
