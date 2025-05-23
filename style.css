@@ -1254,7 +1254,7 @@ footer h1 {
   /* Define o container principal da seção Hero em coluna */
 
   html, body{
-      overflow-x: hidden !important;
+     overflow-x: hidden !important;
      outline: 1px solid red;
   }
   .hero {
@@ -1342,9 +1342,6 @@ footer h1 {
   .meus-projetos {
     margin-bottom: 600px;
   }
-
-
-
     .projeto-card {
     flex-direction: column;
     align-items: center; /* Centraliza o bloco inteiro do projeto */
@@ -1356,7 +1353,11 @@ footer h1 {
     margin-bottom: 160px;
     padding-bottom: 350px;
   }
-
+  .autoDisplay{
+    animation: none;
+    transform: none;
+    
+  }
 
   .projeto-card video {
     width: 100%; /* Deixa o vídeo maior */
@@ -1408,6 +1409,9 @@ footer h1 {
     align-self: flex-start; /* Garante alinhamento igual aos textos */
     margin-left: 6px;
   }
+
+
+  
 
 }
 
