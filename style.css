@@ -6,6 +6,7 @@ body {
     font-family: Arial, Helvetica, sans-serif; /* Define a fonte da página. 
     Se não encontrar Arial, usa Helvetica, e depois qualquer sans-serif */
     color: lightgray; /* Cor padrão do texto no site */
+    
 }
 
 
@@ -1245,6 +1246,170 @@ footer h1 {
     }
 }
 
+
+
+
+
+@media (max-width: 500px) {
+  /* Define o container principal da seção Hero em coluna */
+
+  html, body{
+   
+     outline: 1px solid red;
+  }
+  .hero {
+    display: flex; /* ativa o flexbox */
+    flex-direction: column; /* empilha os elementos em coluna */
+    gap: 1.5rem; /* espaçamento entre o vídeo e o conteúdo */
+    padding: 11rem 0rem; /* espaçamento interno (topo/baixo 2rem, laterais 1rem) */
+    
+    
+  }
+
+  /* Faz o vídeo aparecer antes do conteúdo (fica no topo visualmente) */
+  .hero-vid-box {
+  
+    width: 100%; /* garante que o vídeo ocupe toda a largura disponível */
+    margin-bottom: 1rem; /* adiciona um pequeno espaço abaixo do vídeo */
+  }
+
+  /* Estiliza o vídeo para preencher corretamente sem distorcer */
+  .hero-vid-box video {
+    width: 80%; /* faz o vídeo se ajustar à largura do container */
+    
+    position: absolute;
+    right: 0%;
+    z-index: 999;
+   
+  }
+
+  /* Caixa com o conteúdo textual da hero */
+  .hero-inf {
+    align-items: center;
+  
+  }
+
+  /* Título com ícone */
+  .hero-inf-title {
+    font-size: 1rem; /* reduz um pouco o tamanho para mobile */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Título principal */
+  h1 {
+    font-size: 1.5rem; /* tamanho ajustado para tela pequena */
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Parágrafo explicativo */
+  p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* Botão de contato */
+  button {
+    padding: 0.65rem 1.4rem; /* espaço interno no botão */
+    font-size: 1rem;
+  }
+
+  /* Link dentro do botão */
+  button a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Esconde o ícone de rolagem (opcional) */
+  .scroll--down {
+    display: none;
+  }
+
+
+
+
+
+
+  
+
+
+
+
+  
+  .meus-projetos {
+    margin-bottom: 600px;
+  }
+
+
+
+    .projeto-card {
+    flex-direction: column;
+    align-items: center; /* Centraliza o bloco inteiro do projeto */
+    gap: 40px; /* Espaço entre os cards de projetos */
+    margin-bottom: 160px;
+  }
+
+  .projeto-card video {
+    width: 100%; /* Deixa o vídeo maior */
+    max-width: 200px; /* Evita que fique gigante em telas maiores */
+    margin: 0 auto; /* Centraliza o bloco texto em relação ao vídeo */
+  }
+  .projeto-vidbox video{
+     width: 100%;       /* se adapta à largura do container */ 
+    max-width: 280px !important;  /* não ultrapassa esse limite, usei !important por que outro css estava sobreponto esse tamanho */
+    height: auto;      /* mantém proporção */
+    display: block;    /* remove espaços em branco indesejados */
+  }
+
+  .projeto-inf {
+    width: 90%; /* Mesmo tamanho do vídeo para alinhar */
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza o bloco texto em relação ao vídeo */
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start; /* Garante alinhamento igual aos textos */
+    gap: 10px; /* Espaço entre título, parágrafo e botão */
+    
+  }
+
+  .projeto-inf h1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left; /* Alinha texto à esquerda */
+    white-space: nowrap; /* Evita quebra do título */
+    align-self: flex-start; /* Garante alinhamento igual aos textos */
+    margin-left: 6px;
+    margin-left: 0;
+    margin-right: 0;
+    
+  }
+
+  .projeto-inf p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    max-width: 100%; /* Garante que fique dentro do bloco */
+    word-break: break-word; /* Quebra a palavra quando necessário */
+    margin-left: 6px;
+  }
+
+  .projeto-inf button {
+    margin-top: -35px;
+    align-self: flex-start; /* Garante alinhamento igual aos textos */
+    margin-left: 6px;
+  }
+
+
+
+}
+
+
+
+
+
 /* =======================================================
    MEDIA QUERY PARA TABLETS (TELAS ATÉ 1000px DE LARGURA)
    ======================================================= */
@@ -1442,9 +1607,11 @@ footer h1 {
 
 
 
-/* Mobile */ 
+/* =======================================================
+   MEDIA QUERY PARA TABLETS (TELAS ATÉ 720px DE LARGURA)
+   ======================================================= */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
      
 
     header {
@@ -1524,6 +1691,12 @@ footer h1 {
 
 
 
+
+
+
+
+
+
     .projeto-card {
     flex-direction: column;
     align-items: center; /* Centraliza o bloco inteiro do projeto */
@@ -1534,7 +1707,7 @@ footer h1 {
   .projeto-card video {
     width: 100%; /* Deixa o vídeo maior */
     max-width: 500px; /* Evita que fique gigante em telas maiores */
-      margin: 0 auto; /* Centraliza o bloco texto em relação ao vídeo */
+    margin: 0 auto; /* Centraliza o bloco texto em relação ao vídeo */
   }
 
   .projeto-inf {
