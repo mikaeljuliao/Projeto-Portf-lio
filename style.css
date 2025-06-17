@@ -1281,8 +1281,8 @@ footer h1 {
     width: 80%; /* faz o vídeo se ajustar à largura do container */
     margin-bottom: 0;
     position: absolute;
-    right: 0%;
-    top: 59%;
+    right: 5%;
+    top: 50%;
     z-index: 999;
     margin-top: -60px;
    
