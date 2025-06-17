@@ -1577,6 +1577,193 @@ footer h1 {
 
 
 
+/* =======================================================
+   MEDIA QUERY PARA TABLETS (TELAS ATÉ 1000px DE LARGURA)
+   ======================================================= */
+
+@media screen and (max-width: 1000px) {
+
+    /* ==============================
+       AJUSTES NA SEÇÃO BLACKHOOLE
+       ============================== */
+
+    .left h1{
+       width: 241px;
+       margin-right: 16px;
+       font-size: 30px;
+    }   
+    header ul{
+        width: 276px;
+        margin-left: -20px;
+      
+        
+    }
+    header ul li{
+       width: 100%;
+       text-align: center;
+      
+    }
+    .box-icons{
+        gap: 10px;
+        margin-left: 10px;
+        
+    }
+    .blackhoole-box video {
+        margin-top: -20%; 
+        /* Move o vídeo mais pra cima pra adaptar melhor na tela menor */
+    }
+
+    /* =========================
+       AJUSTES NA SEÇÃO HERO
+       ========================= */
+
+    .hero-inf h1 {
+        font-size: 40px;      /* Reduz o tamanho do título */
+        max-width: 400px;     /* Limita a largura pra evitar quebra feia de linha */
+        line-height: 40px;    /* Aproxima um pouco as linhas */
+    }
+
+    .hero-inf p {
+        max-width: 300px;     /* Reduz a largura do parágrafo */
+    }
+
+    .hero-vid-box {
+        right: 0;             /* Gruda a caixa de vídeo na direita */
+        
+    }
+
+    .hero-vid-box video {
+        height: 500px;        /* Diminui a altura do vídeo pra caber na tela */
+    }
+
+    .section-title {
+        font-size: 30px;      /* Diminui o tamanho do título das seções */
+    }
+
+    /* ============================
+       AJUSTES NOS CARDS DE INFO
+       ============================ */
+    .inf-cards {
+        grid-template-columns: auto;
+        /* Em vez de vários cards lado a lado, agora ficam um embaixo do outro */
+    }
+
+    .card:nth-child(3) {
+        grid-column: span 2;  /* Esse card ocupa o espaço de 2 colunas */
+        height: 70vh;         /* Aumenta a altura pra dar mais destaque */
+    }
+
+    .inf-cards .card h1 {
+        font-size: 20px;      /* Reduz o título dentro de cada card */
+    }
+
+    .card:nth-child(2) p {
+       bottom: 0;
+    }
+
+    .card:nth-child(3) h1 {
+        bottom: 28%;          /* Posiciona o título um pouco acima no card 3 */
+    }
+
+    .card video {
+        height: 80%;          /* Reduz a altura do vídeo dentro dos cards */
+        margin-top: 5%;       /* Adiciona um espaço acima do vídeo */
+    }
+
+    /* ================================
+       SEÇÃO "MEUS PROJETOS"
+       ================================ */
+    .meus-projetos {
+        margin-bottom: 300px; 
+        /* Adiciona bastante espaço abaixo pra não grudar no rodapé */
+    }
+
+    .projeto-vidbox video {
+        width: 250px;         /* Reduz o tamanho do vídeo */
+        margin-left: -100px;  /* Move ele um pouco pra esquerda */
+    }
+
+    .projeto-inf {
+        padding-left: 0;      /* Remove o preenchimento esquerdo */
+        margin-left: -50px;   /* E ainda empurra um pouco pra esquerda */
+    }
+
+    .projeto-inf h1 {
+        font-size: 20px;      /* Diminui o tamanho do título */
+        max-width: 200px;     /* Limita largura pra caber bem */
+        text-wrap: wrap;      /* Permite quebrar linha */
+    }
+
+    .projeto-inf p {
+        font-size: 10px;      /* Diminui o tamanho do texto */
+        text-wrap: wrap;      /* Permite quebra automática */
+        max-width: 200px;      /* Deixa bem compacto */
+        min-width: 0;         /* Garante que pode encolher ao máximo */
+        font-weight: bold;
+        line-height: 15px;
+    }
+    
+
+    .designer{
+        padding-top: 110px;
+    }
+    .coder{
+        padding-top: 110px;
+    }
+
+    .contact-section{
+         padding: 60px 15px 120px; /* espaço interno superior, */
+    }
+    
+
+    .contact-section .section-title{
+        padding-top: 80px;
+        left: 35%;
+    }
+
+  
+    .social-box a{
+        display: flex;
+        font-size: 18px;
+        text-wrap: wrap;
+        margin-bottom: 28px;
+        
+    }
+     .social-box a i{
+        margin-top: -1px;
+     }
+
+     .contact-box input{
+        text-align: left;
+        width: 90%;
+        padding: 6px;
+
+     }
+     
+  /* Campo específico da mensagem */
+  .contact-box .input-message {
+    height: 60px; /* altura maior para o campo de mensagem */
+    
+  }
+
+    /* ====================
+       RODAPÉ
+       ==================== */
+    footer{
+       height: 100px;
+
+     } 
+
+    footer h1 {
+        font-size: 19px;      /* Diminui o título no rodapé */
+        text-align: center;
+        margin-bottom: 31px;
+    }
+}
+
+
+
+
 
 
 /* =======================================================
@@ -1933,198 +2120,6 @@ footer h1 {
 
 
 }
-
-
-
-/* =======================================================
-   MEDIA QUERY PARA TABLETS (TELAS ATÉ 1000px DE LARGURA)
-   ======================================================= */
-
-@media screen and (max-width: 1000px) {
-
-    /* ==============================
-       AJUSTES NA SEÇÃO BLACKHOOLE
-       ============================== */
-
-    .left h1{
-       width: 241px;
-       margin-right: 16px;
-       font-size: 30px;
-    }   
-    header ul{
-        width: 276px;
-        margin-left: -20px;
-      
-        
-    }
-    header ul li{
-       width: 100%;
-       text-align: center;
-      
-    }
-    .box-icons{
-        gap: 10px;
-        margin-left: 10px;
-        
-    }
-    .blackhoole-box video {
-        margin-top: -20%; 
-        /* Move o vídeo mais pra cima pra adaptar melhor na tela menor */
-    }
-
-    /* =========================
-       AJUSTES NA SEÇÃO HERO
-       ========================= */
-
-    .hero-inf h1 {
-        font-size: 40px;      /* Reduz o tamanho do título */
-        max-width: 400px;     /* Limita a largura pra evitar quebra feia de linha */
-        line-height: 40px;    /* Aproxima um pouco as linhas */
-    }
-
-    .hero-inf p {
-        max-width: 300px;     /* Reduz a largura do parágrafo */
-    }
-
-    .hero-vid-box {
-        right: 0;             /* Gruda a caixa de vídeo na direita */
-        
-    }
-
-    .hero-vid-box video {
-        height: 500px;        /* Diminui a altura do vídeo pra caber na tela */
-    }
-
-    .section-title {
-        font-size: 30px;      /* Diminui o tamanho do título das seções */
-    }
-
-    /* ============================
-       AJUSTES NOS CARDS DE INFO
-       ============================ */
-    .inf-cards {
-        grid-template-columns: auto;
-        /* Em vez de vários cards lado a lado, agora ficam um embaixo do outro */
-    }
-
-    .card:nth-child(3) {
-        grid-column: span 2;  /* Esse card ocupa o espaço de 2 colunas */
-        height: 70vh;         /* Aumenta a altura pra dar mais destaque */
-    }
-
-    .inf-cards .card h1 {
-        font-size: 20px;      /* Reduz o título dentro de cada card */
-    }
-
-    .card:nth-child(2) p {
-       bottom: 0;
-    }
-
-    .card:nth-child(3) h1 {
-        bottom: 28%;          /* Posiciona o título um pouco acima no card 3 */
-    }
-
-    .card video {
-        height: 80%;          /* Reduz a altura do vídeo dentro dos cards */
-        margin-top: 5%;       /* Adiciona um espaço acima do vídeo */
-    }
-
-    /* ================================
-       SEÇÃO "MEUS PROJETOS"
-       ================================ */
-    .meus-projetos {
-        margin-bottom: 300px; 
-        /* Adiciona bastante espaço abaixo pra não grudar no rodapé */
-    }
-
-    .projeto-vidbox video {
-        width: 250px;         /* Reduz o tamanho do vídeo */
-        margin-left: -100px;  /* Move ele um pouco pra esquerda */
-    }
-
-    .projeto-inf {
-        padding-left: 0;      /* Remove o preenchimento esquerdo */
-        margin-left: -50px;   /* E ainda empurra um pouco pra esquerda */
-    }
-
-    .projeto-inf h1 {
-        font-size: 20px;      /* Diminui o tamanho do título */
-        max-width: 200px;     /* Limita largura pra caber bem */
-        text-wrap: wrap;      /* Permite quebrar linha */
-    }
-
-    .projeto-inf p {
-        font-size: 10px;      /* Diminui o tamanho do texto */
-        text-wrap: wrap;      /* Permite quebra automática */
-        max-width: 200px;      /* Deixa bem compacto */
-        min-width: 0;         /* Garante que pode encolher ao máximo */
-        font-weight: bold;
-        line-height: 15px;
-    }
-    
-
-    .designer{
-        padding-top: 110px;
-    }
-    .coder{
-        padding-top: 110px;
-    }
-
-    .contact-section{
-         padding: 60px 15px 120px; /* espaço interno superior, */
-    }
-    
-
-    .contact-section .section-title{
-        padding-top: 80px;
-        left: 35%;
-    }
-
-  
-    .social-box a{
-        display: flex;
-        font-size: 18px;
-        text-wrap: wrap;
-        margin-bottom: 28px;
-        
-    }
-     .social-box a i{
-        margin-top: -1px;
-     }
-
-     .contact-box input{
-        text-align: left;
-        width: 90%;
-        padding: 6px;
-
-     }
-     
-  /* Campo específico da mensagem */
-  .contact-box .input-message {
-    height: 60px; /* altura maior para o campo de mensagem */
-    
-  }
-
-    /* ====================
-       RODAPÉ
-       ==================== */
-    footer{
-       height: 100px;
-
-     } 
-
-    footer h1 {
-        font-size: 19px;      /* Diminui o título no rodapé */
-        text-align: center;
-        margin-bottom: 31px;
-    }
-}
-
-
-
-
-
-
 
 
 
