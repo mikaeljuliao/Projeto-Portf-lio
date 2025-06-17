@@ -1445,6 +1445,7 @@ footer h1 {
 
 
 
+
   
   .meus-projetos {
     margin-bottom: 600px;
@@ -1524,7 +1525,6 @@ footer h1 {
   
    
    
-     
 
     .skills-section .section-title{
         margin-top: 160px;
@@ -1536,15 +1536,20 @@ footer h1 {
      }
 
 
-    .skills-box .designer{
+    .skills-b
+     ox .designer{
         padding-top: 210px;
+        width: 90%;
     }
     .skills-box .coder{
         padding-top: 210px;
+       width: 90%;
+       
     }
+    
 
     .skills-box .slider{
-        padding-top: 250px;
+        padding-top: 330px;
     }
   
 
@@ -1556,16 +1561,17 @@ footer h1 {
 
  /* Container da seção de contato */
   .contact-section {
-    padding-top: 300px !important;
+    padding-top: 430px !important;
    
   }
 
   /* Título da seção */
   .contact-section .section-title {
     font-size: 22px; /* reduz o tamanho da fonte do título */
-    margin-top: 140px; /* espaço abaixo do título */
+    margin-top: 290px; /* espaço abaixo do título */
     text-align: center;
     left: 35%;
+    
   }
 
 
@@ -1788,16 +1794,40 @@ footer h1 {
   }
 
   .hero {
-    flex-direction: column;
+    display: flex; /* ativa o flexbox */
+    flex-direction: column; /* empilha os elementos em coluna */
+    gap: 1.5rem; /* espaçamento entre o vídeo e o conteúdo */
+    padding: 11rem 0rem; /* espaçamento interno (topo/baixo 2rem, laterais 1rem) */
+    margin-top: -20px;
   }
 
+  
+  /* Faz o vídeo aparecer antes do conteúdo (fica no topo visualmente) */
+  .hero-vid-box {
+  
+    width: 100%; /* garante que o vídeo ocupe toda a largura disponível */
+   
+  }
+
+  
+  /* Estiliza o vídeo para preencher corretamente sem distorcer */
+  .hero-vid-box video {
+    width: 80%; /* faz o vídeo se ajustar à largura do container */
+    margin-bottom: 0;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    z-index: 999;
+    padding-top: 6px;
+    margin-top: -100px;
+   
+  }
   .autoBlur {
     animation: none;
   }
 
   .hero-inf {
-    bottom: -10%;
-    padding-bottom: 0;
+     bottom: -10%;
   }
 
   .scroll--down {
@@ -1806,24 +1836,75 @@ footer h1 {
     padding-bottom: 0;
   }
 
-
-
-
-
-
-
   .hero-inf h1 {
     line-height: 50px;
   }
 
-  .card p {
-    font-size: 13px;
+
+
+
+
+
+
+ .inf-section{
+     padding-top: 40px;
+     margin-bottom: -150px;
+ }
+
+.inf-section .section-title{
+    margin-bottom: 5px;
+}
+.inf-cards{
+    padding-top: 40px;
+}
+
+.card{
+    padding-bottom: 120px;
+}
+
+.inf-cards .card p{
+    width: 90%;
     max-width: 90%;
+    bottom: 0%;
+    font-size: 12px;
     font-weight: bold;
+ 
+}
+
+.card:nth-child(1) img {
+   position: absolute;
+   top: 1%;
+   width: 100%;
+   max-width: 300px;
+
+   
+  }
+    .card:nth-child(2) img {
+   position: absolute;
+   top: 1%;
+   width: 200px;
+   max-width: 100%;
+   
+  }
+  .card:nth-child(2) h1 {
+    width: 100%;
+    max-width: 100%;
+   
+  }
+  .card:nth-child(3) h1 {
+    width: 100%;
+    max-width: 100%;
+    font-weight: 700;
   }
 
-  .card:nth-child(2) p {
-    bottom: 0%;
+  
+  .card:nth-child(3) p {
+    bottom: 13%;
+  }
+
+   .card:nth-child(3) video {
+    width: 500px; /* faz o vídeo ocupar toda a largura do container */
+    max-width: 100%;
   }
 
   /* Aumenta o tamanho dos vídeos */
@@ -1831,6 +1912,16 @@ footer h1 {
     width: 100%; /* faz o vídeo ocupar toda a largura do container */
     height: auto; /* mantém proporção */
   }
+
+   
+  .card:nth-child(4) img {
+    position: absolute;
+    top: 4%;
+  }
+  .card:nth-child(4) p {
+    font-size: 13px;
+  }
+   
 
   .card-vid h1 {
     margin-bottom: 20px;
@@ -1864,22 +1955,35 @@ footer h1 {
   }
 
 
-    .projeto-card {
+  .projeto-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
     flex-direction: column;
     align-items: center; /* Centraliza o bloco inteiro do projeto */
     gap: 40px; /* Espaço entre os cards de projetos */
     margin-bottom: 160px;
+    padding-bottom: 350px;
   }
 
   .projeto-card video {
     width: 100%; /* Deixa o vídeo maior */
-    max-width: 500px; /* Evita que fique gigante em telas maiores */
+    max-width:100%; /* Evita que fique gigante em telas maiores */
+    height: auto;
     margin: 0 auto; /* Centraliza o bloco texto em relação ao vídeo */
   }
 
+   .projeto-vidbox video{
+    width: 100%;       /* se adapta à largura do container */ 
+    max-width: 500px;  /* não ultrapassa esse limite, 
+    height: auto;      /* mantém proporção */
+    display: block;    /* remove espaços em branco indesejados */
+  }
+
   .projeto-inf {
-    width: 90%; /* Mesmo tamanho do vídeo para alinhar */
-    max-width: 500px;
+    width: 80%; /* Mesmo tamanho do vídeo para alinhar */
+    max-width: 400px;
     margin: 0 auto; /* Centraliza o bloco texto em relação ao vídeo */
     display: flex;
     flex-direction: column;
@@ -1888,13 +1992,12 @@ footer h1 {
   }
 
   .projeto-inf h1 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-align: left; /* Alinha texto à esquerda */
     white-space: nowrap; /* Evita quebra do título */
     align-self: flex-start; /* Garante alinhamento igual aos textos */
     margin-left: 6px;
-    
   }
 
   .projeto-inf p {
@@ -1920,22 +2023,28 @@ footer h1 {
 
     
 .skills-section {
-  padding: 100px 20px;
+  
   position: relative;
-  padding-top: 450px;  /* espaçamento interno no topo pra afastar as seçoes */
+  padding-top: 650px;  /* espaçamento interno no topo pra afastar as seçoes */
 }
 
 /* Título da seção "Minhas Skills" */
 .skills-section .section-title {
   position: absolute;
-  top: 20px;
+  top: 15%;
   left: 50%;
+  width: 100%;
   padding-top: 450px;  /* mesmo espaçamento interno da seçao principal fazendo com que volte pra posição original */
   transform: translateX(-50%);
   z-index: 2;
   text-align: center;
   font-size: 28px; /* Aumentado o tamanho do título */
   animation: none;
+}
+
+.skills-box .skills-image{
+  padding-top: 150px;
+        
 }
 
 /* Container principal das skills */
@@ -1991,7 +2100,7 @@ footer h1 {
   top: calc(100% + 130px); /* posiciona logo abaixo das skills */
   left: 0;
   width: 100%;
-  padding: 20px 0;
+  padding-top: 180px;
   display: flex;
   justify-content: center;
   z-index: 1;
@@ -2024,16 +2133,19 @@ footer h1 {
   
 
 
+
+
+
  /* Container da seção de contato */
   .contact-section {
     padding: 60px 15px 120px; /* espaço interno superior, laterais e inferior */
-    margin-top: 150px; /* empurra a seção um pouco para baixo */
+    margin-top: 500px; /* empurra a seção um pouco para baixo */
   }
 
   /* Título da seção */
   .contact-section .section-title {
     font-size: 22px; /* reduz o tamanho da fonte do título */
-    margin-bottom: 30px; /* espaço abaixo do título */
+    margin-top: -80px; /* espaço abaixo do título */
     text-align: center;
     left: 35%;
   }
