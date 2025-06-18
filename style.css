@@ -1654,6 +1654,7 @@ footer h1 {
 
     .section-title {
         font-size: 30px;      /* Diminui o tamanho do título das seções */
+       
     }
 
     /* ============================
@@ -1662,11 +1663,32 @@ footer h1 {
     .inf-cards {
         grid-template-columns: auto;
         /* Em vez de vários cards lado a lado, agora ficam um embaixo do outro */
+       ;
     }
+    
 
+    .card:nth-child(1) p {
+       font-size: 19px;
+       font-weight: bold;
+       bottom: 0%;
+    }
+     .card:nth-child(2) p {
+       font-size: 19px;
+       font-weight: bold;
+       
+    }
+    
     .card:nth-child(3) {
         grid-column: span 2;  /* Esse card ocupa o espaço de 2 colunas */
         height: 70vh;         /* Aumenta a altura pra dar mais destaque */
+    }
+     .card:nth-child(3) p {
+       font-size: 19px;
+       font-weight: bold;
+    }
+     .card:nth-child(4) p {
+       font-size: 19px;
+       font-weight: bold;
     }
 
     .inf-cards .card h1 {
@@ -1695,7 +1717,7 @@ footer h1 {
     }
 
     .projeto-vidbox video {
-        width: 250px;         /* Reduz o tamanho do vídeo */
+        width: 350px;         /* Reduz o tamanho do vídeo */
         margin-left: -100px;  /* Move ele um pouco pra esquerda */
     }
 
@@ -1711,7 +1733,7 @@ footer h1 {
     }
 
     .projeto-inf p {
-        font-size: 10px;      /* Diminui o tamanho do texto */
+        font-size: 11px;      /* Diminui o tamanho do texto */
         text-wrap: wrap;      /* Permite quebra automática */
         max-width: 200px;      /* Deixa bem compacto */
         min-width: 0;         /* Garante que pode encolher ao máximo */
@@ -1720,20 +1742,45 @@ footer h1 {
     }
     
 
+
+   
+    .skills-section .section-title{
+        margin-top: 180px;
+        margin-bottom: 81px;
+    }
+    
+
     .designer{
         padding-top: 110px;
+    }
+    .designer p{
+      font-weight: bold;
     }
     .coder{
         padding-top: 110px;
     }
+     .coder p{
+       font-weight: bold;
+    }
+
+
+    .skills-box .slider{
+       margin-bottom: 80px;
+    }
+  
+
+
 
     .contact-section{
-         padding: 60px 15px 120px; /* espaço interno superior, */
+         padding: 60px 0px 120px; /* espaço interno superior, */
+         margin-top: 250px;
+       
     }
     
 
     .contact-section .section-title{
-        padding-top: 80px;
+        padding-top: 120px;
+       
         left: 35%;
     }
 
@@ -1755,7 +1802,9 @@ footer h1 {
         padding: 6px;
 
      }
-     
+     .contact-box p{
+      font-size: 20px;
+     }
   /* Campo específico da mensagem */
   .contact-box .input-message {
     height: 60px; /* altura maior para o campo de mensagem */
@@ -1767,6 +1816,7 @@ footer h1 {
        ==================== */
     footer{
        height: 100px;
+       
 
      } 
 
