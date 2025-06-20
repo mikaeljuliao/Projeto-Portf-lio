@@ -424,6 +424,10 @@ header ul a {
     height: 50%; /* Altura de 50% do card */
     object-fit: cover; /* Mantém proporção e preenche a área */
 }
+.card img .minhaImagem{
+  width: 100%;
+  height: 100%;
+}
 
 /* Título (h1) dentro do card */
 .card h1 {
