@@ -420,13 +420,9 @@ header ul a {
 
 /* Estilo da imagem dentro do card */
 .card img {
-    width: 80%; /* Largura ocupando 80% do card */
-    height: 50%; /* Altura de 50% do card */
+    width: 100%; /* Largura ocupando 80% do card */
+    height: 100%; /* Altura de 50% do card */
     object-fit: cover; /* Mantém proporção e preenche a área */
-}
-.card img .minhaImagem{
-  width: 100%;
-  height: 100%;
 }
 
 /* Título (h1) dentro do card */
@@ -497,6 +493,11 @@ header ul a {
    Aqui, a gente está dizendo:
    "Quando o TERCEIRO filho dentro do container for um .card, aplica esse estilo"
 */
+.card:nth-child(1) img {
+   width: 100%;
+   height: 100%;
+  
+}
 .card:nth-child(3) {
     grid-row: span 2; /* Este card ocupa 2 linhas no grid */
     height: 83vh; /* Altura maior para se destacar */
@@ -1387,12 +1388,11 @@ footer h1 {
 
 .card:nth-child(1) img {
    position: absolute;
-   top: 3%;
+   top: 1%;
    width: 100%;
    max-width: 300px;
-
-   
   }
+
   .card:nth-child(2) img {
    position: absolute;
    top: 3%;
@@ -1677,6 +1677,23 @@ footer h1 {
        font-weight: bold;
        bottom: 0%;
     }
+    .card:nth-child(1) img {
+   position: absolute;
+   top: 1%;
+   width: 100%;
+   max-width: 100%;
+  }
+
+
+  .card:nth-child(2) img {
+   position: absolute;
+   
+   bottom: 15%;
+   width: 100%;
+   max-width: 100%;
+   
+  }
+
      .card:nth-child(2) p {
        font-size: 19px;
        font-weight: bold;
@@ -1941,8 +1958,6 @@ footer h1 {
    top: 1%;
    width: 100%;
    max-width: 300px;
-
-   
   }
     .card:nth-child(2) img {
    position: absolute;
