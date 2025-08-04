@@ -370,6 +370,10 @@ header ul a {
 
 
 
+
+
+
+
 /* Seção principal com informações */
 .inf-section {
     position: relative;
@@ -421,7 +425,7 @@ header ul a {
 /* Estilo da imagem dentro do card */
 .card img {
     width: 100%; /* Largura ocupando 80% do card */
-    height: 100%; /* Altura de 50% do card */
+    height: auto; /* Altura de 50% do card */
     object-fit: cover; /* Mantém proporção e preenche a área */
 }
 
@@ -452,7 +456,7 @@ header ul a {
 /* Vídeo dentro do card */
 .card video {
     margin-top: 10%; /* Espaçamento superior */
-    width: 70%; /* Largura de 70% do card */
+    width: 100%; /* Largura de 100% do card */
     height: 50%; /* Altura de 50% do card */
     object-fit: cover; /* Corta para preencher sem distorcer */
     mix-blend-mode: lighten; /* Mistura com o fundo para efeito visual */
@@ -493,9 +497,15 @@ header ul a {
    Aqui, a gente está dizendo:
    "Quando o TERCEIRO filho dentro do container for um .card, aplica esse estilo"
 */
+
 .card:nth-child(1) img {
-   width: 100%;
+   position: absolute;
+   top: 1%;
+ 
+   max-width: 50%;
+   object-fit: cover;
    height: 100%;
+
   
 }
 .card:nth-child(3) {
