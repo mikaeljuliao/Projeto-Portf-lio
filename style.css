@@ -1687,13 +1687,12 @@ footer h1 {
        font-weight: bold;
        bottom: 0%;
     }
-    .card:nth-child(1) img {
+.card:nth-child(1) img {
    position: absolute;
    top: 1%;
    width: 100%;
    max-width: 100%;
   }
-
 
   .card:nth-child(2) img {
    position: absolute;
@@ -1701,6 +1700,7 @@ footer h1 {
    bottom: 15%;
    width: 100%;
    max-width: 100%;
+  
    
   }
 
@@ -1736,7 +1736,7 @@ footer h1 {
     }
 
     .card video {
-        height: 80%;          /* Reduz a altura do vídeo dentro dos cards */
+        height: 100%;          /* Reduz a altura do vídeo dentro dos cards */
         margin-top: 5%;       /* Adiciona um espaço acima do vídeo */
     }
 
