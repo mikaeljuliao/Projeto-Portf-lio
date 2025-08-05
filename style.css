@@ -454,7 +454,7 @@ header ul a {
 /* Vídeo dentro do card */
 .card video {
     margin-top: 10%; /* Espaçamento superior */
-    width: 70%; /* Largura de 100% do card */
+    width: 70%; /* Largura de 70% do card */
     height: 50%; /* Altura de 50% do card */
     object-fit: cover; /* Corta para preencher sem distorcer */
     mix-blend-mode: lighten; /* Mistura com o fundo para efeito visual */
