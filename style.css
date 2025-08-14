@@ -267,7 +267,7 @@ header ul a {
         Se não houver um elemento pai com 'position' definida, o posicionamento é relativo
         à janela do navegador (viewport).
     */
-    right: 3%; /* Coloca a div 0% distante da borda direita da tela */
+    right: 0%; /* Coloca a div 0% distante da borda direita da tela */
 }
 
 
@@ -541,6 +541,11 @@ header ul a {
 .card:nth-child(4) h1 {
     bottom: 35%; /* Posiciona o título mais acima */
 }
+
+
+
+
+
 
 
 /* meus projetos */
