@@ -582,6 +582,7 @@ header ul a {
   Isso evita que o botão do projeto atual fique colado no vídeo do próximo.
   Ideal usar em telas menores ou layouts com coluna única.
 */
+z-index: 999;
 }
 
 /* Caixa que contém o vídeo */
