@@ -1280,42 +1280,52 @@ footer h1 {
 
   html, body{
      overflow-x: hidden !important;
-     outline: 1px solid red;
+   
   }
   .hero {
+    position: relative;
     display: flex; /* ativa o flexbox */
     flex-direction: column; /* empilha os elementos em coluna */
-    gap: 1.5rem; /* espaçamento entre o vídeo e o conteúdo */
-    padding: 11rem 0rem; /* espaçamento interno (topo/baixo 2rem, laterais 1rem) */
-    margin-top: -110px;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    min-height: 100%;
     
     
   }
 
   /* Faz o vídeo aparecer antes do conteúdo (fica no topo visualmente) */
   .hero-vid-box {
-  
-    width: 100%; /* garante que o vídeo ocupe toda a largura disponível */
-    margin-bottom: 0; /* adiciona um pequeno espaço abaixo do vídeo */
-   
+  position: absolute;
+  top: 0;
+  right: 0;
+   width: 100%;
+   height: 100%;
+   margin: 0;
   }
 
   /* Estiliza o vídeo para preencher corretamente sem distorcer */
   .hero-vid-box video {
-    width: 80%; /* faz o vídeo se ajustar à largura do container */
-    margin-bottom: 0;
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    z-index: 999;
-    margin-top: -60px;
-   
+    height: 500px; /* Define a altura fixa do vídeo para 900px */
+    mix-blend-mode: lighten; /* Aplica um efeito de mistura no vídeo, criando um contraste com o fundo */
+  
   }
+.hero-vid-box video {
+    height: 900px; /* Define a altura fixa do vídeo para 900px */
+    mix-blend-mode: lighten; /* Aplica um efeito de mistura no vídeo, criando um contraste com o fundo */
+}
 
+
+/* 
   /* Caixa com o conteúdo textual da hero */
   .hero-inf {
-    align-items: center;
-    margin-top: 7000px;
+    position: relative;
+    z-index: 1;
+   
+    margin: 0;
+    padding: 20px;
   
   }
 
@@ -1864,77 +1874,43 @@ footer h1 {
 
 
 
+
+
+
+
+
 /* =======================================================
    MEDIA QUERY PARA TABLETS (TELAS ATÉ 720px DE LARGURA)
    ======================================================= */
 
 @media screen and (max-width: 720px) {
      
-
+ 
     header {
     position: fixed;
     height: 50px;
+    outline: 1px solid red;
   }
 
   header ul,
   header .box-icons {
     display: none;
+     
   }
 
   .blackhoole-box video {
-    margin-top: -18%;
+    margin-top: -21%;
+     outline: 1px solid red;
+     width: 100%;
   }
-
-  .hero {
+    .hero {
     display: flex; /* ativa o flexbox */
     flex-direction: column; /* empilha os elementos em coluna */
-    gap: 1.5rem; /* espaçamento entre o vídeo e o conteúdo */
+    gap: 1.2rem; /* espaçamento entre o vídeo e o conteúdo */
     padding: 11rem 0rem; /* espaçamento interno (topo/baixo 2rem, laterais 1rem) */
-    margin-top: -20px;
-  }
-
+    margin-top: -40px;
   
-  /* Faz o vídeo aparecer antes do conteúdo (fica no topo visualmente) */
-  .hero-vid-box {
-  
-    width: 100%; /* garante que o vídeo ocupe toda a largura disponível */
-   
   }
-
-  
-  /* Estiliza o vídeo para preencher corretamente sem distorcer */
-  .hero-vid-box video {
-    width: 80%; /* faz o vídeo se ajustar à largura do container */
-    margin-bottom: 0;
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    z-index: 999;
-    padding-top: 6px;
-    margin-top: -100px;
-   
-  }
-  .autoBlur {
-    animation: none;
-  }
-
-  .hero-inf {
-     bottom: -10%;
-  }
-
-  .scroll--down {
-    bottom: -10%;
-    margin-left: 20px;
-    padding-bottom: 0;
-  }
-
-  .hero-inf h1 {
-    line-height: 50px;
-  }
-
-
-
-
 
 
 
