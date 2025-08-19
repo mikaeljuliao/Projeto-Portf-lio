@@ -1,6 +1,4 @@
-*{
-     outline: 1px solid green;
-}
+
 body {
     margin: 0; /* Remove a margem padrão do navegador (espaço em volta da página) */
     padding: 0; /* Remove o preenchimento interno padrão da página */
