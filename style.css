@@ -1301,6 +1301,15 @@ footer h1 {
         /* Em vez de vários cards lado a lado, agora ficam um embaixo do outro */
        ;
     }
+
+
+
+    /* Vídeo dentro do card */
+ .card:nth-child(3) video {
+    width: 500px; /* faz o vídeo ocupar toda a largura do container */
+    max-width: 100%;
+  }
+
     
 
     .card:nth-child(1) p {
@@ -1335,6 +1344,8 @@ footer h1 {
         grid-column: span 2;  /* Esse card ocupa o espaço de 2 colunas */
         height: 70vh;         /* Aumenta a altura pra dar mais destaque */
     }
+
+    
      .card:nth-child(3) p {
        font-size: 19px;
        font-weight: bold;
