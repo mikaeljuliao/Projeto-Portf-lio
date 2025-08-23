@@ -72,8 +72,8 @@ header {
 header ul {
     display: flex; /* Organiza os links em linha */
     justify-content: space-between; /* Espaça os links igualmente */
-    width: 30%; /* Ocupa 30% da largura do header */
-    padding: 15px 15px; /* Espaçamento interno em cima/baixo e laterais */
+    width: 43%; /* Ocupa 30% da largura do header */
+    padding: 15px 10px; /* Espaçamento interno em cima/baixo e laterais */
     border-radius: 50px; /* Deixa os cantos arredondados, formando uma cápsula */
     background-color: rgba(0, 0, 69, 0.39); /* Fundo azul escuro com 39% de opacidade */
     backdrop-filter: blur(10px); /* Aplica desfoque atrás do menu, mantendo legibilidade com estilo moderno */
