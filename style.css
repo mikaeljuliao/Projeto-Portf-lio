@@ -1377,7 +1377,7 @@ footer h1 {
        ================================ */
     .meus-projetos {
         margin-bottom: 300px; 
-        /* Adiciona bastante espaço abaixo pra não grudar no rodapé */
+       
     }
 
     .projeto-vidbox video {
@@ -1407,22 +1407,24 @@ footer h1 {
     
 
 
-   
+   .skills-section {
+    padding-top: 600px;
+   }
     .skills-section .section-title{
         margin-top: -30px;
         margin-bottom: 81px;
     }
     
-    
+   
 
     .designer{
-        padding-top: 110px;
+        padding-top: 140px;
     }
     .designer p{
       font-weight: bold;
     }
     .coder{
-        padding-top: 110px;
+        padding-top: 140px;
     }
      .coder p{
        font-weight: bold;
@@ -1431,15 +1433,15 @@ footer h1 {
 
 
     .skills-box .slider{
-       margin-bottom: 80px;
+       margin-top: 20px;
     }
   
 
 
 
     .contact-section{
-         padding: 60px 0px 120px; /* espaço interno superior, */
-         margin-top: 250px;
+         padding: 350px 0px 120px; /* espaço interno superior, */
+         margin-top: 110px;
        
     }
     
