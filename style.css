@@ -1433,14 +1433,13 @@ footer h1 {
     
 
     .contact-section .section-title{
-     top: 20%;
-    
+      font-size: 38px;
     }
 
   
     .social-box a{
         display: flex;
-        font-size: 18px;
+        font-size: 25px;
         text-wrap: wrap;
         margin-bottom: 28px;
         
@@ -1452,12 +1451,19 @@ footer h1 {
      .contact-box input{
         text-align: left;
         width: 90%;
-        padding: 6px;
+        padding: 10px;
 
      }
      .contact-box p{
-      font-size: 20px;
+      font-size: 25px;
+      
      }
+      .contact-box .cta-p{
+        line-height: 24px;
+      }
+      .contact-box button{
+        padding: 20px;
+      }
   /* Campo específico da mensagem */
   .contact-box .input-message {
     height: 60px; /* altura maior para o campo de mensagem */
@@ -1983,7 +1989,7 @@ footer h1 {
 
     
 .skills-section {
-  
+
   position: relative;
   padding-top: 650px;  /* espaçamento interno no topo pra afastar as seçoes */
 }
@@ -2099,13 +2105,13 @@ footer h1 {
  /* Container da seção de contato */
   .contact-section {
     padding: 60px 15px 120px; /* espaço interno superior, laterais e inferior */
-    margin-top: 500px; /* empurra a seção um pouco para baixo */
+    margin-top: 550px; /* empurra a seção um pouco para baixo */
   }
 
   /* Título da seção */
   .contact-section .section-title {
-    font-size: 22px; /* reduz o tamanho da fonte do título */
-    margin-top: -80px; /* espaço abaixo do título */
+    font-size: 28px; /* reduz o tamanho da fonte do título */
+    margin-top: -230px; /* espaço abaixo do título */
     text-align: center;
     left: 35%;
   }
@@ -2114,7 +2120,7 @@ footer h1 {
   .social-box a {
     display: flex; /* permite alinhar ícone e texto lado a lado */
     align-items: center; /* alinha verticalmente no centro da altura */
-    font-size: 14px; /* reduz o tamanho da fonte do texto */
+    font-size: 18px; /* reduz o tamanho da fonte do texto */
     gap: 8px; /* espaço entre ícone e texto */
     margin-bottom: 12px; /* espaçamento entre os itens da lista */
     text-wrap: wrap; /* permite quebras de linha se necessário */
@@ -2135,7 +2141,7 @@ footer h1 {
   }
 
   .contact-box p {
-    font-size: 14px;
+    font-size: 17px;
     text-align: left; /* alinha os textos à esquerda */
     margin: 19px 0 11px; /* espaçamento acima e abaixo de cada <p> */
     font-weight: bold;
