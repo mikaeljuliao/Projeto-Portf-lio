@@ -253,6 +253,21 @@ header ul a {
     }
 }
 
+.gradient-skills {
+  background: linear-gradient(to right,#1835f1c7, #2641eec7, #2665eec0, #7fa4f4c0,  #9ab6f2c0, 
+    #2a46ffc7 ); /* Cria um degradê colorido da esquerda para a direita */
+    background-size: 200%; /* Faz o fundo ser 2x maior que o texto, permitindo a animação de movimento */
+    background-clip: text; /* Aplica o fundo (degradê) apenas na área do texto */
+    -webkit-background-clip: text; /* Compatibilidade com navegadores baseados em WebKit (Chrome, Safari, etc.) */
+    -webkit-text-fill-color: transparent; /* Torna o texto "vazio", deixando visível apenas o fundo em forma de letras */
+    animation: animate-gradient 2.5s linear infinite;
+}
+@keyframes animate-gradient {
+    to {
+        background-position: 200%; /* Define que, ao final da animação, o 
+        fundo terá se movido até a posição 200% */
+    }
+}
 
 
 /* 
