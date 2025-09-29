@@ -1,21 +1,22 @@
+# 💻 Portfólio Pessoal
 
-<a href="https://youtu.be/moRqo158NGc?si=DAIbiOkKnHknEQVJ" target="_blank">
-  <img src="./images/thumbnail.png" alt="Thumbnail"/>
-</a>
+Portfólio responsivo desenvolvido em **HTML, CSS e JavaScript puro**, criado para apresentar meus projetos, habilidades e trajetória como desenvolvedor.  
+O site destaca meu domínio das tecnologias fundamentais e também demonstra experiência com bibliotecas e frameworks.
 
+## 🎯 O que você encontrará aqui
+- Apresentação pessoal, habilidades técnicas e formas de contato  
+- Seção de projetos com links diretos e descrições  
+- Layout totalmente responsivo, adaptado para diferentes dispositivos  
+- Menu hambúrguer para melhor navegação em telas menores  
+- Animações suaves para uma experiência dinâmica  
+- Formulário de contato com validação para facilitar a comunicação  
 
----
-## Introduction: 
+## 🛠 Tecnologias utilizadas
+- HTML5  
+- CSS3  
+- JavaScript (ES6+)  
+- Git & GitHub  
 
-#### 🎥 Create the Ultimate Portfolio Website with Just HTML,CSS and JavaSctipt! 💻
+## 🔗 Acesse o projeto
 
-#### Want to design a stunning portfolio website that’s responsive, modern, and minimalist? In this step-by-step tutorial, we’ll use only HTML and CSS to craft a visually appealing site that highlights your skills, projects, and creativity. 🌟
-
-#### From building the perfect navbar and styling a sleek header to creating a gallery for your work and adding smooth animations and hover effects, this video covers it all! Whether you’re a beginner or looking to sharpen your design skills, we’ll help you master flexbox, grid, and media queries for a truly responsive layout.
-
-
----
-## Watch the full tutorial on YouTub
-<a href="https://youtu.be/moRqo158NGc?si=DAIbiOkKnHknEQVJ">
-  <img src="./images/youtube-ligo.png" alt="youtube"/>
-</a>
+🌐 **Deploy:** [Portfólio](https://mikael-dev-portfolio.netlify.app/) 
